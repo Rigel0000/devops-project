@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nodejsapp
-  namespace: argocd
+  namespace: mth
   labels:
     app: nodejs
 spec:
@@ -20,8 +20,3 @@ spec:
         image: abdurrahman11/nodejsapp:v6
         ports:
         - containerPort: 4000
-        env:
-        - name: MYSQL_HOST
-          value: mysql.argocd.svc.cluster.local
-        - name: MYSQL_PORT
-          value: "3306"
