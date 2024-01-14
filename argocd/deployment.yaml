@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nodejsapp
-  namespace: mth
+  namespace: argocd
   labels:
     app: nodejs
 spec:
