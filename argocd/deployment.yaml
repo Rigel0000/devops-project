@@ -20,4 +20,8 @@ spec:
         image: abdurrahman11/nodejsapp:v6
         ports:
         - containerPort: 4000
-        
+        env:
+        - name: MYSQL_HOST
+          value: mysql.argocd.svc.cluster.local
+        - name: MYSQL_PORT
+          value: "3306"
